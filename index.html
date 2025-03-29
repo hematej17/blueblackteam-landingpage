@@ -4,111 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Black Team</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="blue-black-logo.jpg" alt="Blue Black Team ">
+    <header class="navigation-bar">
+        <div class="logo-of-company">
+            <img src="blue-black-logo.jpg" alt="Blue Black Team">
         </div>
         <nav>
-            <ul class="nav-links">
+            <ul class="navigation-links">
                 <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#team">TEAM</a></li>
+                <li><a href="#about-company">ABOUT</a></li>
+                <li><a href="#about-projects">PROJECTS</a></li>
+                <li><a href="#group">TEAM</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <img src="blue-black3.jpg" alt="Hero Image" class="hero-image">
-            <div class="hero-text">
+    <section class="main-section" id="home">
+        <div class="main-section-container">
+            <img src="blue-black3.jpg" alt="main image" class="hero-image">
+            <div class="content">
                 <h1>Innovate. Collaborate. Elevate.</h1>
-        <p>Blue Black Team is a dynamic group of developers, designers, and innovators dedicated to building cutting-edge solutions.</p>
+                <p>Blue Black Team is a dynamic group of developers, designers, and innovators dedicated to building cutting-edge solutions.</p>
                 <a href="#" class="btn">Learn More</a>
             </div>
         </div>
     </section>
-    <!-- About Section -->
-    <section id="about">
+
+    <section id="about-company">
         <h2>About Us</h2>
         <p>We are the Blue Black Team, a group of passionate developers dedicated to building smart, efficient, and scalable digital solutions. Our mission is to leverage technology to solve real-world problems and enhance user experiences.</p>
-        <p>We believe in innovation, collaboration, and excellence, ensuring that every project we work on meets high-quality standards.Our vision is to create impactful and user-friendly solutions With a strong focus on web development and AI, we strive to deliver projects that are both efficient and accessible. Our values guide us in building technology that makes a difference.
-
-
-
-
-
-
-
-        </p>
+        <p>We believe in innovation, collaboration, and excellence, ensuring that every project we work on meets high-quality standards. Our vision is to create impactful and user-friendly solutions. With a strong focus on web development and AI, we strive to deliver projects that are both efficient and accessible. Our values guide us in building technology that makes a difference.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <section id="about-projects">
         <h2>Our Projects</h2>
-        <div class="project">
+        <div class="projects">
             <img src="chatbot.jpg" alt="AI Chatbot">
-            <div class="project-text">
+            <div class="description">
                 <h3>Chatbot</h3>
                 <p>A chatbot that provides automated customer support.</p>
             </div>
         </div>
-        <div class="project">
+        <div class="projects">
             <img src="eco-track.jpg" alt="EcoTrack">
-            <div class="project-text">
+            <div class="description">
                 <h3>EcoTrack</h3>
                 <p>A sustainability app to track carbon footprints.</p>
             </div>
         </div>
-        <div class="project">
-            <img src="web-analyzer.jpg" alt="Smart Home">
-            <div class="project-text">
+        <div class="projects">
+            <img src="web-analyzer.jpg" alt="Smart Web Analyzer">
+            <div class="description">
                 <h3>Smart Web Analyzer</h3>
-            <p>A tool that optimizes website performance.</p>
+                <p>A tool that optimizes website performance.</p>
             </div>
         </div>
-        <div class="view-all-projects">
-            <a href="#">View All Projects</a>
-        </div>        
+        <div class="see-all-projects">
+            <a href="#">See All Projects</a>
+        </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team">
+    <section id="group">
         <h2>Meet Our Team</h2>
-    
-        <div class="team-member">
+        <div class="team-members">
             <img src="hematej.jpg" alt="Hematej">
             <h3>Akkana Venkata Hematej</h3>
             <p>Lead Developer</p>
-            <button class="arrow" onclick="toggleBio('bio-john')">▼</button>
-            <p class="bio" id="bio-john" style="display: none;">Hematej has 5 years of experience in web development and AI.</p>
+            <button class="toggle-bio" onclick="toggleBio('about-hematej')">▼</button>
+            <p class="about-them" id="about-hematej" style="display: none;">Hematej has 5 years of experience in web development and AI.</p>
         </div>
-    
-        <div class="team-member">
+        <div class="team-members">
             <img src="viratkohli.jpg" alt="Virat Kohli">
             <h3>Virat Kohli</h3>
             <p>UI/UX Designer</p>
-            <button class="arrow" onclick="toggleBio('bio-jane')">▼</button>
-            <p class="bio" id="bio-jane" style="display: none;">Virat specializes in user experience design for AI-based products.</p>
+            <button class="toggle-bio" onclick="toggleBio('about-virat')">▼</button>
+            <p class="about-them" id="about-virat" style="display: none;">Virat specializes in user experience design for AI-based products.</p>
         </div>
-    
-        <div class="team-member">
+        <div class="team-members">
             <img src="rohitsharma.jpg" alt="Rohit Sharma">
             <h3>Rohit Sharma</h3>
             <p>AI Engineer</p>
-            <button class="arrow" onclick="toggleBio('bio-mark')">▼</button>
-            <p class="bio" id="bio-mark" style="display: none;">Rohit develops AI models and optimizes machine learning pipelines.</p>
+            <button class="toggle-bio" onclick="toggleBio('about-rohit')">▼</button>
+            <p class="about-them" id="about-rohit" style="display: none;">Rohit develops AI models and optimizes machine learning pipelines.</p>
         </div>
     </section>
-    
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <form>
@@ -117,52 +100,41 @@
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-    
-        <!-- Social Media Links -->
-        <div class="social-media">
+        <div class="contactors">
             <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
             <a href="https://www.twitter.com" target="_blank">Twitter</a>
             <a href="https://www.github.com" target="_blank">GitHub</a>
         </div>
     </section>
-    
-    <!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <!-- Quick Links in One Line -->
-        <div class="quick-links">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
 
-        <!-- Contact Information (Email on Top, Phone Below) -->
-        <div class="contact-info">
-            <h4>Contact Us</h4>
-            <p>Email: example@example.com</p>
-            <p>Phone: +123 456 7890</p>
-        </div>
-
-        <!-- Social Media Links (Icons in a Single Line) -->
-        <div class="social-links">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-                <a href="#"><img src="linkedin.jpg" alt="LinkedIn"></a>
-                <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
-                <a href="#"><img src="github.jpg" alt="GitHub"></a>
+    <footer>
+        <div class="footer-details">
+            <div class="links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-company">About</a></li>
+                    <li><a href="#about-projects">Projects</a></li>
+                    <li><a href="#group">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h4>Contact Us</h4>
+                <p>Email: example@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="social-media-links">
+                <h4>Follow Us</h4>
+                <div class="social-media-logo">
+                    <a href="#"><img src="linkedin.jpg" alt="LinkedIn"></a>
+                    <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="github.jpg" alt="GitHub"></a>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
-    
-</footer>
-
-<!-- JavaScript -->
-<script src="script.js" defer></script>
-
+    <script src="script.js" defer></script>
 </body>
 </html>
+
